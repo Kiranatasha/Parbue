@@ -338,8 +338,17 @@ a {
 }
 
 .service-row em {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  color: var(--black);
+  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-size: clamp(1.6rem, 3vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1;
+  text-rendering: geometricPrecision;
   transition: transform 180ms ease;
 }
 
