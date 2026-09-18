@@ -14,3 +14,11 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((element) => {
   observer.observe(element);
 });
+
+document.querySelectorAll(".service-row").forEach((row) => {
+  row.addEventListener("click", () => {
+    const item = row.closest(".service-item");
+    const isOpen = item.classList.toggle("is-open");
+    row.setAttribute("aria-expanded", String(isOpen));
+  });
+});

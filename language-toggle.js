@@ -97,7 +97,7 @@ class LanguageToggle {
       }
 
       .toggle-input:checked ~ .lang-label.id-label {
-        color: rgba(255, 68, 68, 0.8);
+        color: rgba(255, 255, 255, 0.82);
       }
 
       .toggle-input:not(:checked) ~ .lang-label.en-label {
@@ -105,7 +105,7 @@ class LanguageToggle {
       }
 
       .toggle-input:not(:checked) ~ .lang-label.id-label {
-        color: rgba(255, 68, 68, 0.4);
+        color: rgba(255, 255, 255, 0.35);
       }
 
       .language-switch {
@@ -165,8 +165,8 @@ class LanguageToggle {
       }
 
       .glow-dot.left-dot {
-        background: radial-gradient(circle, #ff4444 0%, #dd2222 50%, transparent 100%);
-        box-shadow: 0 0 12px rgba(255, 68, 68, 0.5), inset 0 0 6px rgba(255, 100, 100, 0.3);
+        background: radial-gradient(circle, #ffffff 0%, #a8a8a8 54%, transparent 100%);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.28), inset 0 0 6px rgba(255, 255, 255, 0.14);
       }
 
       .glow-dot.right-dot {
@@ -181,8 +181,8 @@ class LanguageToggle {
 
       .toggle-input:checked ~ .glow-dot.left-dot {
         opacity: 1;
-        box-shadow: 0 0 18px rgba(255, 68, 68, 0.8), inset 0 0 10px rgba(255, 100, 100, 0.5);
-        animation: glow-pulse-red 2s ease-in-out infinite;
+        box-shadow: 0 0 16px rgba(255, 255, 255, 0.45), inset 0 0 8px rgba(255, 255, 255, 0.2);
+        animation: glow-pulse-gray 2s ease-in-out infinite;
       }
 
       .toggle-input:checked ~ .glow-dot.right-dot {
@@ -193,7 +193,7 @@ class LanguageToggle {
       /* Unchecked state (English active - right) */
       .toggle-input:not(:checked) ~ .glow-dot.left-dot {
         opacity: 0.25;
-        box-shadow: 0 0 6px rgba(255, 68, 68, 0.15), inset 0 0 3px rgba(255, 100, 100, 0.08);
+        box-shadow: 0 0 6px rgba(255, 255, 255, 0.1), inset 0 0 3px rgba(255, 255, 255, 0.06);
       }
 
       .toggle-input:not(:checked) ~ .glow-dot.right-dot {
@@ -202,12 +202,12 @@ class LanguageToggle {
         animation: glow-pulse-white 2s ease-in-out infinite;
       }
 
-      @keyframes glow-pulse-red {
+      @keyframes glow-pulse-gray {
         0%, 100% {
-          box-shadow: 0 0 12px rgba(255, 68, 68, 0.5), inset 0 0 6px rgba(255, 100, 100, 0.3);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.26), inset 0 0 5px rgba(255, 255, 255, 0.12);
         }
         50% {
-          box-shadow: 0 0 20px rgba(255, 68, 68, 0.8), inset 0 0 10px rgba(255, 100, 100, 0.5);
+          box-shadow: 0 0 16px rgba(255, 255, 255, 0.44), inset 0 0 8px rgba(255, 255, 255, 0.2);
         }
       }
 
